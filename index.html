@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstract Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            background-color: #1E1E1E;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .geral{
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+        .images{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 10px;
+        }
+        .text{
+            font-size: 48px;
+            color: aliceblue;
+        }
+        .img1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
 </head>
 <body>
-    Abstract Gallery
+    <div class="geral">
+        <div class="text">
+            The - Abstract Gallery
+        </div>
+        <div class="images">
+            <img class="img1" src="img/img-here.png" alt="">
+            <img class="img2" src="img/img-here (1).png" alt="">
+            <img class="img3" src="img/img-here (2).png" alt="">
+            <img class="img4" src="img/img-here (3).png" alt="">
+            <img class="img5" src="img/img-here (4).png" alt="">
+            <img class="img6" src="img/img-here (6).png" alt="">
+            <img class="img7" src="img/img-here (7).png" alt="">
+        </div>
+    </div>
 </body>
 </html>
