@@ -6,50 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstract Gallery</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
         body{
-            display: flex;
             background-color: #1E1E1E;
-            width: 100vw;
-            height: 100vh;
+            width: 100vw !important;
+            height: 100vh !important;
+            overflow-x: hidden;
+        }
+        .geral{
+            display: flex;
             justify-content: center;
             align-items: center;
         }
-        .geral{
-            display: grid;
-            grid-template-columns: 30% 70%;
-        }
         .images{
             display: grid;
-            grid-template-columns: auto 1fr;
-            grid-gap: 10px;
+            grid-template-columns: 384px 384px 384px;
+            grid-template-rows: 284px;
+            grid-gap: 32px;
         }
         .text{
             font-size: 48px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
             color: aliceblue;
+            grid-column: 1;
+            grid-row: 1;
+            grid-row-end: span 7;
         }
         .img1{
             grid-row-start: 1;
-            grid-row-end: 3;
+            grid-row-end: span 2;
+            grid-column: 2;
+        }
+        .img2{
+            grid-row-start: 1;
+        }
+        .img3{
+            grid-row-start: 2;
+            grid-column: 3;
+        }
+        .img4{
+            grid-column-start: 2;
+            grid-column-end: span 2;
+            grid-row: 3;
+        }
+        .img5{
+            grid-row-start: 4;
+        }
+        .img6{
+            grid-row: 5;
+        }
+        .img7{
+            grid-row-start: 4;
+            grid-row-end: span 2;
+        }
+        .img8{
+            grid-row: 6;
         }
     </style>
 </head>
 <body>
     <div class="geral">
-        <div class="text">
-            The - Abstract Gallery
-        </div>
         <div class="images">
+            <h7 class="text">The - Abstract Gallery</h7>
             <img class="img1" src="img/img-here.png" alt="">
             <img class="img2" src="img/img-here (1).png" alt="">
             <img class="img3" src="img/img-here (2).png" alt="">
             <img class="img4" src="img/img-here (3).png" alt="">
             <img class="img5" src="img/img-here (4).png" alt="">
-            <img class="img6" src="img/img-here (6).png" alt="">
-            <img class="img7" src="img/img-here (7).png" alt="">
+            <img class="img6" src="img/img-here (5).png" alt="">
+            <img class="img7" src="img/img-here (6).png" alt="">
+            <img class="img8" src="img/img-here (7).png" alt="">
         </div>
     </div>
 </body>
